@@ -1,7 +1,7 @@
-import { test } from './../utils/fixtures';
+import { test } from '../utils/fixtures';
 
 
-test('test', async ({ dashboardPage  }) => {
+test('UI test case for Dashboard', async ({ dashboardPage  }) => {
   test.setTimeout(120000);
   await dashboardPage.verifyAppLogo();
   await dashboardPage.clickDashboardMenu();
